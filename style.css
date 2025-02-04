@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.innerContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.box-1{
+    background: url('./desktop/image-header.jpg') no-repeat center center/cover;
+    grid-row: 1/2;
+    grid-column: 1/5;
+    height: 27rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: large;
+    line-height: 1.4;
+}
+ /* Innercontainer nav css */
+
+ nav{
+    display: flex;
+    padding: 25px;
+ }
+ .navDiv{
+    margin-left: auto;
+ }
+ nav a{
+    color: white;
+    padding: 10px;
+ }
+ nav a:hover{
+    color:hsl(210, 4%, 67%)
+ }
+ .navDiv button{
+    padding: 10px;
+    text-decoration: none;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bold;
+ }
+ .navDiv button:hover{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: white;
+ }
+
+        /* grid Boxes */
+.box-2{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 100%;
+
+}
+
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25%;
+}
+.textDiv p{
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 500;
+    color: hsl(220, 1%, 46%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textDiv a{
+    font-weight: bolder;
+    color: black;
+    padding-top: 20px ;
+}
+
+.textDiv a:hover{
+    color: gray;
+}
+
+.box-3{
+    grid-row: 2/3;
+    grid-column: 3/5 ;
+}
+
+.box-4{
+    grid-row: 3/4;
+    grid-column:1/3 ;
+}
+
+.box-5{
+    grid-row:3/4 ;
+    grid-column: 3/5;
+}
+.box-6{
+    grid-row:4/5 ;
+    grid-column: 1/3;
+    width: 100%;
+    height: 30rem;
+    background: url('image-graphic-design.jpg' )no-repeat center center/cover;
+
+}
+.box-7{
+    grid-row:4/5 ;
+    grid-column: 3/5;
+    width: 100%;
+    height: 30rem;
+    background: url('image-photography.jpg') no-repeat center center/cover;
+}
+.bgtext{
+    padding-top: 55%;
+    padding-inline: 20%;
+    text-align: center;
+    line-height: 1.5;
+    color: hsl(213, 9%, 39%);
+}
+.fourimgs{
+    height: 100%;
+    width: 100%;
+}
+.testmonialFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 40px;
+ }
+ .box-8{
+    text-align: center;
+    margin: 10px;
+    
+ }
+ .box-9{
+    text-align: center;
+    margin: 10px;
+ }
+ .box-10{
+    text-align: center;
+    margin: 10px;
+ }
+ h4{
+    text-align: center;
+    line-height: 1.4;
+    color: hsl(210, 4%, 67%);
+ }
+
+.person{
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+}
+.ptag1{
+    padding: 20px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+.ptag2{
+    opacity: 50%;
+    font-size: 12px;
+}
+ .testmonialFlex2{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .box-11{
+    width: 100%;
+    height: 20rem;
+ }
+.box-12{
+    width: 100%;
+    height: 20rem;
+}
+.box-13{
+    width: 100%;
+    height: 20rem;
+}
+.box-14{
+    width: 100%;
+    height: 20rem;
+}
+
+.fourimgs{
+    width: 100%;
+    height: 100%;
+}
+
+.footerclass{
+    background-color: hsl(167, 71%, 70%);
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 30px;
+    color: hsl(167, 40%, 24%);
+}
+a{
+    color: hsl(167, 40%, 24%);
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+}
+.socialmedia{
+    padding-top: 25px;
+}
+.socialmedia img{
+    padding: 10px;
+    
+}
+.socialmedia a:hover{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+
+/* mobile view */
+@media  (max-width:480px)  {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .innerContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box-1{
+        grid-row:1/2 ;
+        grid-column: 1/1;
+    }
+    .box-2{
+        grid-row: 3/4;
+        grid-column: 1/1;
+    }
+    .box-3{
+        grid-row: 2/3;
+        grid-column: 1/1;
+    }
+    .box-4{
+        grid-row:4/5 ;
+        grid-column: 1/1;
+    }
+    .box-5{
+        grid-row:5/6 ;
+        grid-column: 1/1;
+    }
+    .box-6{
+        grid-row:7/8 ;
+        grid-column: 1/1;
+    }
+    .box-7{
+        grid-row:8/9 ;
+        grid-column: 1/1;
+    }
+
+
+    .bgtext{
+        margin-top: 15%;
+    }
+
+    .textDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15%;
+    }
+    .textDiv p{
+        font-size: 16px;
+    }
+    .testmonialFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        border: 0;
+        margin: 0;
+    }
+
+    .testmonialFlex2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+     }
+
+}
